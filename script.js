@@ -5,7 +5,11 @@ var values = [0]
 
 function addValues(input) {
     if (input === '=') {
-
+        let resStr = ''
+        for (var i = 0; i < values.length; i++) {
+            resStr = resStr + values[i]
+        }
+        values = [eval(resStr)]
     }
     else {
         // TODO store the given value
